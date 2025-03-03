@@ -23,7 +23,7 @@ function Business(){
             <p>{businessObject.state}, {businessObject.zip}</p>
             <p>{businessObject.category}</p>
             <p>{businessObject.rating}</p>
-            <p>{businessObject.reviewCount</p>
+            <p>{businessObject.reviewCount}</p>
         </div>
     );
 }
