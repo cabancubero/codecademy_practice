@@ -1,12 +1,13 @@
 import React from 'react';
 
+const businessList = []
 const businessObject = {
-    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
+    img: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
     name: 'MarginOtto Pizzeria',
     address: '1010 Paddington Way',
     city: 'Flavortown',
     state: 'NY',
-    zipCode: '10101',
+    zip: '10101',
     category: 'Italian',
     rating: 4.5,
     reviewCount: 90
@@ -15,14 +16,28 @@ const businessObject = {
 function Business(){
     return (
         <div className = "business">
-            <img src='' alt=''/>
-            <h2>Business Name</h2>
-            <p>Address</p>
-            <p>City</p>
-            <p>State, Zip</p>
-            <p>Category</p>
-            <p>Rating</p>
-            <p>review count</p>
+            <img src={businessObject.img} alt={businessObject.name}/>
+            <h2>{businessObject.name}</h2>
+            <p>{businessObject.address}</p>
+            <p>{businessObject.city}</p>
+            <p>{businessObject.state}, {businessObject.zip}</p>
+            <p>{businessObject.category}</p>
+            <p>{businessObject.rating}</p>
+            <p>{businessObject.reviewCount</p>
         </div>
     );
+}
+
+function BusinessList(){
+    return (
+        <div className = "businessList">
+            <Business/>
+            <Business/>
+            <Business/>
+            <Business/>
+            <Business/>
+            <Business/>
+        </div>
+
+    )
 }
